@@ -8,6 +8,9 @@ const nextConfig = {
     assetPrefix: isProd ? '/Uspacy/' : '',
     output: 'export',
     distDir: 'dist',
+    images: {
+        unoptimized: true,
+      },
 };
 
 module.exports = nextConfig;

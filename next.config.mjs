@@ -2,10 +2,13 @@
 
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-    basePath: isProd ? '/Uspacy' : '',  // Замініть 'your-repo-name' на назву вашого репозиторію
+    basePath: isProd ? '/Uspacy' : '', 
     assetPrefix: isProd ? '/Uspacy/' : '',
     output: 'export',
     distDir: 'dist',
+    images: {
+        unoptimized: true,
+      },
 };
 
 export default nextConfig;
