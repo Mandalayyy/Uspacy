@@ -195,7 +195,7 @@ export default function Home() {
 
   return (
     <div className="container grid justify-center content-center">
-      <div className="flex items-center justify-center md:mb-35">
+      <div className="flex items-center justify-center mb-20 md:mb-35">
         <p className='md:mr-10 animate-fade-in'>Онлайн-конференція</p>
         <span className=''>
           <svg
@@ -227,7 +227,7 @@ export default function Home() {
         <button className="btn btn--secondary">Зареєструватися</button>
       </div>
       <div className="relative  flex flex-col md:grid md:grid-cols-5 md:gap-x-10  justify-center items-center md:items-start mb-100 md:mb-[23rem]">
-        <h3 className='md:col-span-2 md: justify-self-center animate-fade-in'>
+        <h3 className='md:col-span-2 text-center md:text-start md:justify-self-center animate-fade-in'>
           Про що ця <br />
           онлайн-конференція
         </h3>

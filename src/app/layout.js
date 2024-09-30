@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <div className="absolute h-full bgImage -top-[31.3rem] left-0 min -z-10 ">
         
         </div>
-        <header className="container flex items-center justify-between top-0 pt-[6.8rem] sticky z-10">
+        <header className="container flex items-center justify-between top-0 pt-45 md:pt-[6.8rem] sticky z-10">
             <Image
               src={`${isProd ? '/Uspacy/logo.svg' : '/logo.svg'}`}
               alt="uspacy logo"
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <button className="btn btn--primary">Зареєструватися</button>
         </header>
 
-        <main className="relative pt-100">
+        <main className="relative pt-65 md:pt-100">
           
           {children}
         </main>
