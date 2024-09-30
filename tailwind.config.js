@@ -802,7 +802,7 @@ module.exports = {
         },
 
         '.bgImage':{
-          backgroundImage: 'url(/bg.jpg)',
+          backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg.jpg)`,
           minHeight: '100vh',
           width: '100%', 
           backgroundPosition: 'center',
@@ -914,7 +914,7 @@ module.exports = {
     top: '13px', // Центрування по вертикалі
     width: '14px', // Ширина галочки
     height: '10px', // Висота галочки
-    backgroundImage: 'url(/checkmark.svg)',
+    backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/checkmark.svg)`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     transform: 'translate(-50%, -50%)', // Центрування галочки

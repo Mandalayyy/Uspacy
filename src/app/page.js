@@ -243,7 +243,7 @@ export default function Home() {
             onClick={scrollToBottom}
           >
             <Image
-              src="/arrow.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/arrow.svg`}
               alt="arrow"
               width={26}
               height={54}
@@ -253,7 +253,7 @@ export default function Home() {
           </button>
           <div className={`absolute top-14 left-1/2 right-1/2 transform -translate-x-1/2 ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
             <Image
-              src="/uspacy.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/uspacy.svg`}
               alt="uspacy"
               width={3334}
               height={722}
