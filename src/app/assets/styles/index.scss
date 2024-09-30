@@ -1,0 +1,15 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+// @import 'vendors/icomoon/styles';
+
+@import 'tailwindcss/base';
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/forms';
+
+
+@import 'tailwindcss/utilities';
+
+@import 'tailwindcss/components';
+
