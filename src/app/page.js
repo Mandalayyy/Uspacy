@@ -252,7 +252,8 @@ export default function Home() {
               className='w-[2.6rem] h-[5.4rem]'
             />
           </button>
-          <div className={`absolute top-14 left-1/2 right-1/2  ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
+        </div>
+        <div className={`absolute top-14 left-1/2 right-1/2 will-change-transform  ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
             <Image
             
               src={`${isProd ? '/Uspacy/uspacy.svg' : '/uspacy.svg'}`}
@@ -263,7 +264,6 @@ export default function Home() {
               className='w-full'
             />
           </div>
-        </div>
       </div>
 
       <div className="flex flex-col md:gap-y-20 md:justify-self-center items-center md:items-start max-w-[30rem] md:max-w-[45.5rem] justify-center " ref={formRef}>

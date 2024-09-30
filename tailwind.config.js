@@ -270,12 +270,12 @@ module.exports = {
       },
       animation: {
         fade: 'fade 2s ease-in-out infinite',
-        'fade-up': 'fade-up 1s ease-out',
-        'fade-in': 'fade-in 1s ease-out',
+        'fade-up': 'fade-up 1.5s ease-out',
+        'fade-in': 'fade-in 1.5s ease-out',
         'fade-out': 'fade-out 0.5s ease-in-out',
         'slide-in': 'slide-in 0.5s ease-out forwards',
         'slide-out': 'slide-out 0.5s ease-in forwards',
-        'expand': 'expand 1s ease-in-out forwards;',
+        'expand': 'expand 1.5s ease-in-out forwards',
         pulse: 'pulse 2s infinite',
       },
       transitionProperty: {
