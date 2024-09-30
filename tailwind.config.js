@@ -16,6 +16,8 @@ const media = (resolution, mobileFirst = true) => {
   return `@media (max-width: ${stripUnit(resolution) - 1}px)`;
 };
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const extraSizes = {
   '1/2': '50%',
   '1/3': '33.333333%',
@@ -802,7 +804,7 @@ module.exports = {
         },
 
         '.bgImage':{
-          backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/bg.jpg)`,
+          backgroundImage: `url(${isProd ? '/Uspacy/bg.jpg' : '/bg.jpg'})`,
           minHeight: '100vh',
           width: '100%', 
           backgroundPosition: 'center',
@@ -914,7 +916,7 @@ module.exports = {
     top: '13px', // Центрування по вертикалі
     width: '14px', // Ширина галочки
     height: '10px', // Висота галочки
-    backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/checkmark.svg)`,
+    backgroundImage: `url(${isProd ? '/Uspacy/checkmark.svg' : '/checkmark.svg'})`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     transform: 'translate(-50%, -50%)', // Центрування галочки

@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const isProd = process.env.NODE_ENV === 'production';
   return (
     <html lang="en">
       <body
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         </div>
         <header className="container flex items-center justify-between top-0 pt-[6.8rem] sticky z-10">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.svg`}
+              src={`${isProd ? '/Uspacy/logo.svg' : '/logo.svg'}`}
               alt="uspacy logo"
               width={116}
               height={32}

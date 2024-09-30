@@ -149,7 +149,7 @@ const validationSchema = Yup.object({
 
 export default function Home() {
   const outerTheme = useTheme();
-
+  const isProd = process.env.NODE_ENV === 'production';
   // Масив слів
   const words = ["підприємництво", "мрію", "перемогу", "сенси", "майбутнє", "лідерство", "місію", "бізнес", "візію", "допомогу"];
   
@@ -242,8 +242,9 @@ export default function Home() {
             className="md:mt-[4rem] mt-20 bg-white bg-opacity-[0.03] rounded-full"
             onClick={scrollToBottom}
           >
+            
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/arrow.svg`}
+              src={`${isProd ? '/Uspacy/arrow.svg' : '/arrow.svg'}`}
               alt="arrow"
               width={26}
               height={54}
@@ -253,7 +254,8 @@ export default function Home() {
           </button>
           <div className={`absolute top-14 left-1/2 right-1/2 transform -translate-x-1/2 ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/uspacy.svg`}
+            
+              src={`${isProd ? '/Uspacy/uspacy.svg' : '/uspacy.svg'}`}
               alt="uspacy"
               width={3334}
               height={722}
