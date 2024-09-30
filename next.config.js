@@ -4,7 +4,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 
 const nextConfig = {
-    basePath: isProd ? '/nextjs-blog-deployment' : '',
+    basePath: isProd ? '/Uspace' : '',  // Замініть 'your-repo-name' на назву вашого репозиторію
+    assetPrefix: isProd ? '/Uspace/' : '',
     output: 'export',
     distDir: 'dist',
 };
