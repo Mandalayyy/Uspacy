@@ -398,7 +398,6 @@ export default function Home() {
               onChange={handleChange}
               value={values.policyAgreement}
               error={touched.policyAgreement && Boolean(errors.policyAgreement)}
-              helperText={touched.policyAgreement && errors.policyAgreement}
               onBlur={handleBlur}
               checked={values.policyAgreement} 
             />
