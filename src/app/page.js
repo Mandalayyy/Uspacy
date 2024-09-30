@@ -252,7 +252,7 @@ export default function Home() {
               className='w-[2.6rem] h-[5.4rem]'
             />
           </button>
-          <div className={`absolute top-14 left-1/2 right-1/2 transform -translate-x-1/2 ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
+          <div className={`absolute top-14 left-1/2 right-1/2  ${isAnimating ? 'animate-expand' : 'w-0'} pointer-events-none`}>
             <Image
             
               src={`${isProd ? '/Uspacy/uspacy.svg' : '/uspacy.svg'}`}
@@ -260,7 +260,7 @@ export default function Home() {
               width={3334}
               height={722}
               loading="lazy" 
-              className='w-screen'
+              className='w-full'
             />
           </div>
         </div>

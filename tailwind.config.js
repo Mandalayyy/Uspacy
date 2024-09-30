@@ -275,7 +275,7 @@ module.exports = {
         'fade-out': 'fade-out 0.5s ease-in-out',
         'slide-in': 'slide-in 0.5s ease-out forwards',
         'slide-out': 'slide-out 0.5s ease-in forwards',
-        'expand': 'expand 1s ease forwards;',
+        'expand': 'expand 1s ease-in-out forwards;',
         pulse: 'pulse 2s infinite',
       },
       transitionProperty: {
